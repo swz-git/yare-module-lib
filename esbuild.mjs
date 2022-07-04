@@ -4,9 +4,11 @@ esbuild
   .build({
     entryPoints: ["src/index.ts"],
     bundle: true,
-    outfile: "dist/bundle.js",
+    outdir: "dist",
     sourcemap: "external",
     minify: true,
+    splitting: true,
+    target: ["esnext"],
     treeShaking: true,
     format: "esm",
   })
