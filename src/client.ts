@@ -1,5 +1,9 @@
-export function injectHtml(html: string, element: Element = document.body) {
-  document.body.innerHTML += html;
+export function injectHtml(
+  html: string,
+  position: InsertPosition = "beforeend",
+  element: Element = document.body
+) {
+  element.insertAdjacentHTML(position, html);
 }
 
 let lastdata: Record<string, any[]> = {};
