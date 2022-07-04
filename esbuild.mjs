@@ -8,5 +8,6 @@ esbuild
     sourcemap: "external",
     minify: true,
     treeShaking: true,
+    format: "esm",
   })
   .catch(() => process.exit(1));

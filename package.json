@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/bundle.js",
+  "type": "module",
   "scripts": {
     "build": "node esbuild.mjs",
     "postinstall": "npm run build"
