@@ -1,0 +1,19 @@
+{
+  "name": "yare-module-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "author": "swz",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.48"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
