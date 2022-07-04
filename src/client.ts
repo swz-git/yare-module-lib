@@ -9,6 +9,7 @@ document.addEventListener("chan", (e) => {
   lastdata = e.detail;
 
   for (let channel of Object.keys(lastdata)) {
+    if (callList[channel] == null) continue;
     for (let toCall of callList[channel]) {
       try {
         toCall(lastdata[channel]);
